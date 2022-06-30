@@ -17,6 +17,12 @@
 		<div class="container">
 			<div class="header__wrapper">
 				<div class="header__block">
+					<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+					</button>
 					<a href="index.html" class="logotype header__logotype">
 						<img src="img/logotype.svg" alt="Уральский федеральный университет">
 					</a>
@@ -50,27 +56,95 @@
 	<!-- end of header -->
 	<!-- main -->
 	<div class="main" id="main">
-		<div class="main__slider">
-			<div class="swiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="main__slide">
-							<div class="main__body">
-								<h3 class="main__title">asdada</h3>
-								<p class="main__description">asdadas</p>
-								<a href="#" class="main__link">asdadaas</a>
+		<div class="container">
+			<div class="main__slider">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="main__slide">
+								<div class="main__body">
+									<h3 class="main__title">Уральский гуманитарный институт УрФУ</h3>
+									<p class="main__description">Самый крупный институт в составе УрФУ, который включает в себя все департаменты социогуманитарной направленности</p>
+									<a href="#" class="main__link">Посмотреть направления</a>
+								</div>
+								<picture class="main__img">
+									<img src="img/main-01.jpg" alt="Image">
+								</picture>
 							</div>
-							<picture class="main__img">
-								<img src="img/main-01.jpg" alt="Image">
-							</picture>
+						</div>
+						<div class="swiper-slide">
+							<div class="main__slide">
+								<div class="main__body">
+									<h3 class="main__title">УГИ занял четвертое место в России в новом рейтинге Forbes </h3>
+									<a href="#" class="main__link">Посмотреть направления</a>
+								</div>
+								<picture class="main__img">
+									<img src="img/main-02.jpg" alt="Image">
+								</picture>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="main__slide">
+								<div class="main__body">
+									<h3 class="main__title">УГИ вошел в число ведущих мировых университетов в области гуманитарных наук и искусств. </h3>
+									<a href="#" class="main__link">Посмотреть направления</a>
+								</div>
+								<picture class="main__img">
+									<img src="img/main-03.jpg" alt="Image">
+								</picture>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="main__slide">
+								<div class="main__body">
+									<h3 class="main__title">УГИ стал лидером среди всех российских вузов в новом рейтинге от агентства RAEX</h3>
+									<a href="#" class="main__link">Посмотреть направления</a>
+								</div>
+								<picture class="main__img">
+									<img src="img/main-04.jpg" alt="Image">
+								</picture>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="main__slide">
+								<div class="main__body">
+									<h3 class="main__title">УГИ занимает четвертое место в рейтинге вузов спросом у крупных работодателей.</h3>
+									<p class="main__description">Проведенного Общественной палатой РФ и Ассоциацией "МАКО".</p>
+									<a href="#" class="main__link">Посмотреть направления</a>
+								</div>
+								<picture class="main__img">
+									<img src="img/main-05.jpg" alt="Image">
+								</picture>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="main__slide">
+								<div class="main__body">
+									<h3 class="main__title">+44000 выпустников нашли работу и устроили свою жизнь</h3>
+									<a href="#" class="main__link">Посмотреть направления</a>
+								</div>
+								<picture class="main__img">
+									<img src="img/main-06.jpg" alt="Image">
+								</picture>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="swiper-buttons">
-					<button class="swiper-button-prev" aria-label="Назад"></button>
-					<button class="swiper-button-next" aria-label="Далее"></button>
+					<div class="swiper-buttons">
+						<button class="swiper-button-prev" aria-label="Назад">
+							<svg class="swiper-button-icon">
+								<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+							</svg>
+						</button>
+						<button class="swiper-button-next" aria-label="Далее">
+							<svg class="swiper-button-icon">
+								<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="swiper-pagination"></div>
 				</div>
 			</div>
+			<a href="#" class="main__btn btn btn--dark">Оставить заявку</a>
 		</div>
 	</div>
 	<!-- end of main -->
@@ -120,6 +194,7 @@
 					</div>
 				</article>
 			</div>
+			<a href="#" class="news__more more-btn" aria-label="Показать ещё"></a>
 		</div>
 	</section>
 	<!-- end of news -->
@@ -470,6 +545,7 @@
 						</div>
 					</a>
 				</div>
+				<a href="#" class="directions__more more-btn" aria-label="Показать ещё"></a>
 			</div>
 		</div>
 	</section>
@@ -480,17 +556,22 @@
 			<h2 class="feedback__heading">Оставь заявку и мы ответим на все вопросы!</h2>
 			<form action="#" class="feedback-form feedback__form">
 				<div class="feedback-form__inner">
-					<input type="text" class="input feedback-form__input" placeholder="Имя">
-					<input type="text" class="input feedback-form__input" placeholder="Фамилия">
+					<input type="text" class="input feedback-form__input" placeholder="Имя" required>
+					<input type="text" class="input feedback-form__input" placeholder="Фамилия" required>
 				</div>
 				<div class="feedback-form__inner">
-					<input type="email" class="input feedback-form__input" placeholder="E-mail">
-					<input type="tel" class="input feedback-form__input" placeholder="+7">
+					<input type="email" class="input feedback-form__input" placeholder="E-mail" required>
+					<input type="tel" class="input feedback-form__input" placeholder="+7" data-inputmask="'mask': '+7 (999) 999-99-99'" required>
 				</div>
 				<div class="feedback-form__inner">
-					<input type="text" class="input feedback-form__input" placeholder="Задать вопрос">
+					<input type="text" class="input feedback-form__input" placeholder="Задать вопрос" required>
 				</div>
 				<div class="feedback-form__bottom">
+					<label for="feedback-checkbox" class="square-checkbox feedback-form__checkbox">
+						<input type="checkbox" id="feedback-checkbox" class="square-checkbox__input">
+						<span class="square-checkbox__icon"></span>
+						<span class="square-checkbox__label">Я подтверждаю согласие на обработку своих персональных данных, а именно совершение действий, предусмотренных п. 3 ч. 1 ст. 3 Федерального закона от 27.07.2006 N 152-ФЗ "О персональных данных", и подтверждаю, что, давая такое согласие, действую свободно, своей волей и в своем интересе. Я также подтверждаю, что ознакомился с <a href="#">Положением в отношении обработки персональных данных в УрФУ</a> <br>Согласен с <a href="#">политикой конфиденциальности</a>. </span>
+					</label>
 					<button class="feedback-form__btn btn">Отправить</button>
 				</div>
 			</form>
