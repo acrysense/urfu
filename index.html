@@ -15,7 +15,7 @@
 	<!-- header -->
 	<header class="header" id="header">
 		<div class="container">
-			<div class="header__wrapper">
+			<div class="header__wrapper" data-aos="fade-in">
 				<div class="header__block">
 					<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
 						<span class="hamburger__inner"></span>
@@ -54,8 +54,36 @@
 		</div>
 	</header>
 	<!-- end of header -->
+	<!-- mobile menu -->
+	<div class="mobile-menu" id="mobile-menu">
+		<div class="mobile-menu__top">
+			<h3 class="mobile-menu__title">Магистратура</h3>
+			<button class="mobile-menu__close" id="mobile-menu-close" aria-label="Закрыть">
+				<svg class="mobile-menu__close-icon">
+					<use xlink:href="img/sprite.svg#icon-close"></use>
+				</svg>
+			</button>
+		</div>
+		<nav class="nav mobile-menu__nav">
+			<ul class="nav__list">
+				<li class="nav__item">
+					<a href="#news" class="nav__link">Новости</a>
+				</li>
+				<li class="nav__item">
+					<a href="#directions" class="nav__link">Наши направления в магистратуре</a>
+				</li>
+				<li class="nav__item">
+					<a href="#feedback" class="nav__link">Оставить заявку</a>
+				</li>
+				<li class="nav__item">
+					<a href="#footer" class="nav__link">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<!-- end of mobile menu -->
 	<!-- main -->
-	<div class="main" id="main">
+	<div class="main" id="main" data-aos="fade-in">
 		<div class="container">
 			<div class="main__slider">
 				<div class="swiper">
@@ -149,7 +177,7 @@
 	</div>
 	<!-- end of main -->
 	<!-- promo -->
-	<section class="promo" id="promo">
+	<section class="promo" id="promo" data-aos="fade-in">
 		<div class="container">
 			<h2 class="promo__heading">Станьте ценным специалистом для передовой компании</h2>
 		</div>
@@ -159,11 +187,11 @@
 	<section class="news" id="news">
 		<div class="container">
 			<div class="section-heading">
-				<h2 class="section-heading__title">Новости</h2>
-				<a href="#" class="section-heading__link">Все новости</a>
+				<h2 class="section-heading__title" data-aos="fade-right">Новости</h2>
+				<a href="#" class="section-heading__link" data-aos="fade-left">Все новости</a>
 			</div>
 			<div class="news__wrapper">
-				<article class="news__item">
+				<article class="news__item" data-aos="fade-up">
 					<a href="#" class="news__img">
 						<img src="img/news-01.png" alt="Image">
 					</a>
@@ -173,7 +201,7 @@
 						<p class="news__description">Став первым в стране по приему, <br>ВУЗ потеснил ВШЭ и МГУ</p>
 					</div>
 				</article>
-				<article class="news__item">
+				<article class="news__item" data-aos="fade-up" data-aos-delay="50">
 					<a href="#" class="news__img">
 						<img src="img/news-02.png" alt="Image">
 					</a>
@@ -183,7 +211,7 @@
 						<p class="news__description">78 школьников Свердловской области <br>начали работу в Сочи</p>
 					</div>
 				</article>
-				<article class="news__item">
+				<article class="news__item" data-aos="fade-up" data-aos-delay="100">
 					<a href="#" class="news__img">
 						<img src="img/news-03.png" alt="Image">
 					</a>
@@ -194,23 +222,32 @@
 					</div>
 				</article>
 			</div>
-			<a href="#" class="news__more more-btn" aria-label="Показать ещё"></a>
+			<a href="#" class="news__more more-btn" aria-label="Показать ещё" data-aos="fade-up"></a>
 		</div>
 	</section>
 	<!-- end of news -->
 	<!-- directions -->
 	<section class="directions" id="directions">
 		<div class="container">
-			<div class="section-heading">
+			<div class="section-heading" data-aos="fade-right">
 				<h2 class="section-heading__title">Наши направления в магистратуре в 2022 г</h2>
+			</div>
+			<div class="directions__controls">
+				<a href="#" class="directions__more-link more-link">
+					<span>Все формы обучения</span>
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-add"></use>
+					</svg>
+				</a>
+				<input type="text" class="directions__input" placeholder="Поиск">
 			</div>
 			<div class="directions__wrapper">
 				<div class="directions__top">
-					<h3 class="directions__heading">Востоковедение и африканистика</h3>
-					<a href="#" class="directions__link">Подробнее</a>
+					<h3 class="directions__heading" data-aos="fade-right">Востоковедение и африканистика</h3>
+					<a href="#" class="directions__link" data-aos="fade-left">Подробнее</a>
 				</div>
 				<div class="directions__main">
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up">
 						<span class="directions__title">Восток в глобальных процессах современности</span>
 						<div class="directions__inner">
 							<div class="directions__group">
@@ -224,11 +261,11 @@
 			</div>
 			<div class="directions__wrapper">
 				<div class="directions__top">
-					<h3 class="directions__heading">Лингвистика</h3>
-					<a href="#" class="directions__link">Подробнее</a>
+					<h3 class="directions__heading" data-aos="fade-right">Лингвистика</h3>
+					<a href="#" class="directions__link" data-aos="fade-left">Подробнее</a>
 				</div>
 				<div class="directions__main">
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up">
 						<span class="directions__title">Лингвистическое сопровождение международной и внешнеэкономической деятельности</span>
 						<div class="directions__inner">
 							<div class="directions__group">
@@ -238,7 +275,7 @@
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="50">
 						<span class="directions__title">Методика преподавания иностранного языка, перевода и межкультурной коммуникации</span>
 						<div class="directions__inner">
 							<div class="directions__group">
@@ -248,7 +285,7 @@
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="100">
 						<span class="directions__title">Перевод и переводоведение</span>
 						<div class="directions__inner">
 							<div class="directions__group">
@@ -258,7 +295,7 @@
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="50">
 						<span class="directions__title">Устный перевод, межкультурная коммуникация и когнитивная лингвистика</span>
 						<div class="directions__inner">
 							<div class="directions__group">
@@ -268,7 +305,7 @@
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="100">
 						<span class="directions__title">Международная профессиональная коммуникация в евразийском контексте</span>
 						<div class="directions__inner">
 							<div class="directions__group">
@@ -282,11 +319,11 @@
 			</div>
 			<div class="directions__wrapper">
 				<div class="directions__top">
-					<h3 class="directions__heading">Международные отношения</h3>
-					<a href="#" class="directions__link">Подробнее</a>
+					<h3 class="directions__heading" data-aos="fade-right">Международные отношения</h3>
+					<a href="#" class="directions__link" data-aos="fade-left">Подробнее</a>
 				</div>
 				<div class="directions__main">
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up">
 						<span class="directions__title">Глобальная и региональная безопасность и урегулирование конфликтов</span>
 						<div class="directions__inner">
 							<div class="directions__group">
@@ -296,7 +333,7 @@
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="50">
 						<span class="directions__title">Гуманитарная дипломатия и международные переговоры</span>
 						<div class="directions__inner">
 							<div class="directions__group">
@@ -306,7 +343,7 @@
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="100">
 						<span class="directions__title">Дипломатия энергоресурсов</span>
 						<div class="directions__inner">
 							<div class="directions__group">
@@ -320,11 +357,11 @@
 			</div>
 			<div class="directions__wrapper">
 				<div class="directions__top">
-					<h3 class="directions__heading">Медиакоммуникации</h3>
-					<a href="#" class="directions__link">Подробнее</a>
+					<h3 class="directions__heading" data-aos="fade-right">Медиакоммуникации</h3>
+					<a href="#" class="directions__link" data-aos="fade-left">Подробнее</a>
 				</div>
 				<div class="directions__main">
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up">
 						<span class="directions__title">Проектирование и сопровождение медиапроцессов</span>
 						<div class="directions__inner">
 							<div class="directions__group">
@@ -338,11 +375,11 @@
 			</div>
 			<div class="directions__wrapper">
 				<div class="directions__top">
-					<h3 class="directions__heading">Психология</h3>
-					<a href="#" class="directions__link">Подробнее</a>
+					<h3 class="directions__heading" data-aos="fade-right">Психология</h3>
+					<a href="#" class="directions__link" data-aos="fade-left">Подробнее</a>
 				</div>
 				<div class="directions__main">
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up">
 						<span class="directions__title">Когнитивные нейронауки</span>
 						<div class="directions__inner">
 							<div class="directions__group">
@@ -352,7 +389,7 @@
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="50">
 						<span class="directions__title">Психологическое и организационное консультирование</span>
 						<div class="directions__inner">
 							<div class="directions__group">
@@ -366,11 +403,11 @@
 			</div>
 			<div class="directions__wrapper">
 				<div class="directions__top">
-					<h3 class="directions__heading">Педагогическое образование</h3>
-					<a href="#" class="directions__link">Подробнее</a>
+					<h3 class="directions__heading" data-aos="fade-right">Педагогическое образование</h3>
+					<a href="#" class="directions__link" data-aos="fade-left">Подробнее</a>
 				</div>
 				<div class="directions__main">
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up">
 						<span class="directions__title">Проектная и экспертно-аналитическая деятельность педагога</span>
 						<div class="directions__inner">
 							<div class="directions__group">
@@ -380,7 +417,7 @@
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="50">
 						<span class="directions__title">Цифровая педагогика и когнитивные технологии</span>
 						<div class="directions__inner">
 							<div class="directions__group">
@@ -390,7 +427,7 @@
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="100">
 						<span class="directions__title">Проектная и экспертно-аналитическая деятельность педагога</span>
 						<div class="directions__inner">
 							<div class="directions__group">
@@ -404,38 +441,38 @@
 			</div>
 			<div class="directions__wrapper">
 				<div class="directions__main directions__main--square">
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up">
 						<span class="directions__title">Антропология и этнология</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="50">
 						<span class="directions__title">Дизайн</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
 							<span class="directions__status directions__status--dark">Заочная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="100">
 						<span class="directions__title">Документоведение и архивоведение</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status directions__status--dark">Заочная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="150">
 						<span class="directions__title">Журналистика</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="50">
 						<span class="directions__title">Зарубежное регионоведение</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="100">
 						<span class="directions__title">Издательское дело</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
@@ -443,13 +480,13 @@
 							<span class="directions__status directions__status--gradient">Очно-заочная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="150">
 						<span class="directions__title">Интеллектуальные системы в гуманитарной среде</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="200">
 						<span class="directions__title">История</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
@@ -457,95 +494,95 @@
 							<span class="directions__status directions__status--gradient">Очно-заочная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="50">
 						<span class="directions__title">История искусств</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
 							<span class="directions__status directions__status--dark">Заочная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="100">
 						<span class="directions__title">Конфликтология</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status directions__status--gradient">Очно-заочная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="150">
 						<span class="directions__title">Культурология</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="200">
 						<span class="directions__title">Политология</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="50">
 						<span class="directions__title">Религиоведение</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="100">
 						<span class="directions__title">Сервис</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="150">
 						<span class="directions__title">Социальная работа</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="200">
 						<span class="directions__title">Социально-культурная деятельность</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="50">
 						<span class="directions__title">Социология</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="100">
 						<span class="directions__title">Телевидение</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="150">
 						<span class="directions__title">Туризм</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="200">
 						<span class="directions__title">Управление персоналом</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
 							<span class="directions__status directions__status--dark">Заочная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="50">
 						<span class="directions__title">Филология</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
 							<span class="directions__status directions__status--gradient">Очно-заочная</span>
 						</div>
 					</a>
-					<a href="#" class="directions__item">
+					<a href="#" class="directions__item" data-aos="fade-up" data-aos-delay="100">
 						<span class="directions__title">Фундаментальная и прикладная лингвистика</span>
 						<div class="directions__inner directions__inner--end">
 							<span class="directions__status">Очная</span>
 						</div>
 					</a>
 				</div>
-				<a href="#" class="directions__more more-btn" aria-label="Показать ещё"></a>
+				<a href="#" class="directions__more more-btn" aria-label="Показать ещё" data-aos="fade-up"></a>
 			</div>
 		</div>
 	</section>
@@ -553,26 +590,26 @@
 	<!-- feedback -->
 	<section class="feedback" id="feedback">
 		<div class="container">
-			<h2 class="feedback__heading">Оставь заявку и мы ответим на все вопросы!</h2>
+			<h2 class="feedback__heading" data-aos="fade-in">Оставь заявку и мы ответим на все вопросы!</h2>
 			<form action="#" class="feedback-form feedback__form">
 				<div class="feedback-form__inner">
-					<input type="text" class="input feedback-form__input" placeholder="Имя" required>
-					<input type="text" class="input feedback-form__input" placeholder="Фамилия" required>
+					<input type="text" class="input feedback-form__input" placeholder="Имя" required data-aos="fade-right">
+					<input type="text" class="input feedback-form__input" placeholder="Фамилия" required data-aos="fade-left">
 				</div>
 				<div class="feedback-form__inner">
-					<input type="email" class="input feedback-form__input" placeholder="E-mail" required>
-					<input type="tel" class="input feedback-form__input" placeholder="+7" data-inputmask="'mask': '+7 (999) 999-99-99'" required>
+					<input type="email" class="input feedback-form__input" placeholder="E-mail" required data-aos="fade-right">
+					<input type="tel" class="input feedback-form__input" placeholder="+7" data-inputmask="'mask': '+7 (999) 999-99-99'" required data-aos="fade-left">
 				</div>
 				<div class="feedback-form__inner">
-					<input type="text" class="input feedback-form__input" placeholder="Задать вопрос" required>
+					<input type="text" class="input feedback-form__input" placeholder="Задать вопрос" required data-aos="fade-right">
 				</div>
 				<div class="feedback-form__bottom">
-					<label for="feedback-checkbox" class="square-checkbox feedback-form__checkbox">
+					<label for="feedback-checkbox" class="square-checkbox feedback-form__checkbox" data-aos="fade-in" data-aos-delay="50">
 						<input type="checkbox" id="feedback-checkbox" class="square-checkbox__input">
 						<span class="square-checkbox__icon"></span>
 						<span class="square-checkbox__label">Я подтверждаю согласие на обработку своих персональных данных, а именно совершение действий, предусмотренных п. 3 ч. 1 ст. 3 Федерального закона от 27.07.2006 N 152-ФЗ "О персональных данных", и подтверждаю, что, давая такое согласие, действую свободно, своей волей и в своем интересе. Я также подтверждаю, что ознакомился с <a href="#">Положением в отношении обработки персональных данных в УрФУ</a> <br>Согласен с <a href="#">политикой конфиденциальности</a>. </span>
 					</label>
-					<button class="feedback-form__btn btn">Отправить</button>
+					<button class="feedback-form__btn btn" data-aos="fade-in" data-aos-delay="50">Отправить</button>
 				</div>
 			</form>
 		</div>
@@ -583,21 +620,21 @@
 		<div class="container">
 			<div class="footer__wrapper">
 				<div class="footer__block">
-					<div class="footer__group">
+					<div class="footer__group" data-aos="fade-right">
 						<span class="footer__help">Горячая линия отборочной комиссии УГИ УрФУ</span>
 						<a href="tel:+79058003595" class="footer__link">+7 (905) 800-35-95</a>
 					</div>
-					<div class="footer__group">
+					<div class="footer__group" data-aos="fade-right">
 						<span class="footer__help">Контакт-центр УрФУ (звонок бесплатный)</span>
 						<a href="tel:+78001005044" class="footer__link">+7 (800) 100-50-44</a>
 					</div>
 				</div>
 				<div class="footer__block">
-					<div class="footer__group">
+					<div class="footer__group" data-aos="fade-left">
 						<span class="footer__help">Email</span>
 						<a href="mailto:gumanitarii.priem@urfu.ru" class="footer__link">gumanitarii.priem@urfu.ru</a>
 					</div>
-					<ul class="c-socials c-socials--accent footer__socials">
+					<ul class="c-socials c-socials--accent footer__socials" data-aos="fade-left">
 						<li class="c-socials__item">
 							<a href="#" class="c-socials__link">ВКонтакте</a>
 						</li>
@@ -607,7 +644,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="footer__wrapper footer__wrapper--center">
+			<div class="footer__wrapper footer__wrapper--center" data-aos="fade-in" data-aos-offset="0">
 				<p class="footer__copyright">ФГАОУ ВО «УрФУ имени первого Президента России Б.Н. Ельцина» | Все права защищены 2022</p>
 			</div>
 		</div>
