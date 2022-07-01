@@ -172,7 +172,7 @@
 					<div class="swiper-pagination"></div>
 				</div>
 			</div>
-			<a href="#" class="main__btn btn btn--dark">Оставить заявку</a>
+			<a href="#" class="main__btn btn btn--dark modal-btn" data-id="submit-application">Оставить заявку</a>
 		</div>
 	</div>
 	<!-- end of main -->
@@ -603,13 +603,13 @@
 				<div class="feedback-form__inner">
 					<input type="text" class="input feedback-form__input" placeholder="Задать вопрос" required data-aos="fade-right">
 				</div>
-				<div class="feedback-form__bottom">
-					<label for="feedback-checkbox" class="square-checkbox feedback-form__checkbox" data-aos="fade-in" data-aos-delay="50">
+				<div class="feedback-form__bottom" data-aos="fade-in" data-aos-delay="50">
+					<label for="feedback-checkbox" class="square-checkbox feedback-form__checkbox">
 						<input type="checkbox" id="feedback-checkbox" class="square-checkbox__input">
 						<span class="square-checkbox__icon"></span>
 						<span class="square-checkbox__label">Я подтверждаю согласие на обработку своих персональных данных, а именно совершение действий, предусмотренных п. 3 ч. 1 ст. 3 Федерального закона от 27.07.2006 N 152-ФЗ "О персональных данных", и подтверждаю, что, давая такое согласие, действую свободно, своей волей и в своем интересе. Я также подтверждаю, что ознакомился с <a href="#">Положением в отношении обработки персональных данных в УрФУ</a> <br>Согласен с <a href="#">политикой конфиденциальности</a>. </span>
 					</label>
-					<button class="feedback-form__btn btn" data-aos="fade-in" data-aos-delay="50">Отправить</button>
+					<button class="feedback-form__btn btn">Отправить</button>
 				</div>
 			</form>
 		</div>
@@ -650,6 +650,58 @@
 		</div>
 	</footer>
 	<!-- end of footer -->
+	<!-- modals -->
+	<div class="modal" id="submit-application">
+		<button class="modal__close-btn modal__close" aria-label="Закрыть">
+			<svg class="modal__close-icon">
+				<use xlink:href="img/sprite.svg#icon-close"></use>
+			</svg>
+		</button>
+		<div class="modal__scroll">
+			<div class="modal__wrapper">
+				<h2 class="modal__title">Оставь заявку и мы ответим на все вопросы!</h2>
+				<form action="#" class="modal-form modal__form">
+					<div class="modal-form__inner">
+						<input type="text" class="input input--sm input--grey modal-form__input" placeholder="Имя" required>
+						<input type="text" class="input input--sm input--grey modal-form__input" placeholder="Фамилия" required>
+					</div>
+					<div class="modal-form__inner">
+						<input type="email" class="input input--sm input--grey modal-form__input" placeholder="E-mail" required>
+					</div>
+					<div class="modal-form__inner">
+						<input type="tel" class="input input--sm input--grey modal-form__input" placeholder="+7" data-inputmask="'mask': '+7 (999) 999-99-99'" required>
+					</div>
+					<div class="modal-form__inner">
+						<input type="text" class="input input--sm input--grey modal-form__input" placeholder="Задать вопрос" required>
+					</div>
+					<div class="modal-form__bottom">
+						<label for="modal-checkbox" class="square-checkbox square-checkbox--primary modal-form__checkbox">
+							<input type="checkbox" id="modal-checkbox" class="square-checkbox__input">
+							<span class="square-checkbox__icon"></span>
+							<span class="square-checkbox__label">Я подтверждаю согласие на обработку своих персональных данных, а именно совершение действий, предусмотренных п. 3 ч. 1 ст. 3 Федерального закона от 27.07.2006 N 152-ФЗ "О персональных данных", и подтверждаю, что, давая такое согласие, действую свободно, своей волей и в своем интересе. Я также подтверждаю, что ознакомился с <a href="#">Положением в отношении обработки персональных данных в УрФУ</a> <br>Согласен с <a href="#">политикой конфиденциальности</a>. </span>
+						</label>
+						<button class="modal-form__btn btn modal-btn" data-id="modal-success">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="modal__overlay"></div>
+	</div>
+	<div class="modal" id="modal-success">
+		<button class="modal__close-btn modal__close" aria-label="Закрыть">
+			<svg class="modal__close-icon">
+				<use xlink:href="img/sprite.svg#icon-close"></use>
+			</svg>
+		</button>
+		<div class="modal__scroll modal__scroll--success">
+			<div class="modal__wrapper modal__wrapper--purple">
+				<h3 class="modal__heading">Заявка принята. <br>В ближайшее время специалист свяжется с Вами </h3>
+				<a href="#" class="modal__btn btn modal__close">Закрыть</a>
+			</div>
+		</div>
+		<div class="modal__overlay"></div>
+	</div>
+	<!-- end of modals -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
