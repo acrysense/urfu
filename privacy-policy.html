@@ -27,7 +27,7 @@
 					<a href="index.html" class="logotype header__logotype">
 						<img src="img/logotype.svg" alt="Уральский федеральный университет">
 					</a>
-					<a href="#" class="header__btn btn btn--md btn--gradient">Магистратура</a>
+					<a href="#directions" class="header__btn btn btn--md btn--gradient">Магистратура</a>
 					<ul class="c-socials header__socials">
 						<li class="c-socials__item">
 							<a href="https://telegram.me/ugi_urfu" class="c-socials__link" target="_blank">Телеграм</a>
@@ -50,6 +50,7 @@
 						<a href="tel:+78001005044" class="header__link">+7 (800) 100-50-44</a>
 						<span class="header__help">контакт-центр УрФУ <br>(звонок бесплатный)</span>
 					</div>
+					<a href="#" class="header__btn btn btn--md btn--gradient modal-btn" data-id="submit-application">Оставить заявку</a>
 				</div>
 			</div>
 		</div>
@@ -293,17 +294,14 @@
 					<input type="hidden" name="form_subject" value="Заявка с сайта urgi.urfu.ru" />
 					<!-- end of hidden required fields -->
 					<div class="modal-form__inner">
-						<input type="text" class="input input--sm input--grey modal-form__input" name="Имя" placeholder="Имя" required>
-						<input type="text" class="input input--sm input--grey modal-form__input" name="Фамилия" placeholder="Фамилия" required>
+						<input type="text" class="input input--sm input--grey modal-form__input" name="Имя" placeholder="Имя*" required>
+						<input type="tel" class="input input--sm input--grey modal-form__input" name="Телефон" placeholder="+7*" data-inputmask="'mask': '+7 (999) 999-99-99'" required>
 					</div>
 					<div class="modal-form__inner">
-						<input type="email" class="input input--sm input--grey modal-form__input" name="E-mail" placeholder="E-mail">
+						<input type="email" class="input input--sm input--grey modal-form__input" name="E-mail" placeholder="E-mail*" required>
 					</div>
 					<div class="modal-form__inner">
-						<input type="tel" class="input input--sm input--grey modal-form__input" name="Телефон" placeholder="+7" data-inputmask="'mask': '+7 (999) 999-99-99'" required>
-					</div>
-					<div class="modal-form__inner">
-						<input type="text" class="input input--sm input--grey modal-form__input" name="Вопрос" placeholder="Задать вопрос" required>
+						<input type="text" class="input input--sm input--grey modal-form__input" name="Вопрос" placeholder="Задать вопрос">
 					</div>
 					<div class="modal-form__bottom">
 						<label for="modal-checkbox" class="square-checkbox square-checkbox--primary modal-form__checkbox">
@@ -394,10 +392,20 @@
 							<li class="program-tabs__item program-tabs__item--active">
 								<button class="program-tabs__tab">Очная</button>
 							</li>
+							<li class="program-tabs__item">
+								<button class="program-tabs__tab">Заочная</button>
+							</li>
 						</ul>
 					</div>
 					<div class="info-modal__group">
 						<div class="program-tabs__wrapper program-tabs__wrapper--active">
+							<ul class="info-modal__list">
+								<li class="info-modal__item">23 Бюджетных мест</li>
+								<li class="info-modal__item">8 Контрактных мест</li>
+								<li class="info-modal__item">Цена не указана</li>
+							</ul>
+						</div>
+						<div class="program-tabs__wrapper">
 							<ul class="info-modal__list">
 								<li class="info-modal__item">23 Бюджетных мест</li>
 								<li class="info-modal__item">8 Контрактных мест</li>
@@ -730,10 +738,20 @@
 							<li class="program-tabs__item program-tabs__item--active">
 								<button class="program-tabs__tab">Очная</button>
 							</li>
+							<li class="program-tabs__item">
+								<button class="program-tabs__tab">Очная</button>
+							</li>
 						</ul>
 					</div>
 					<div class="info-modal__group">
 						<div class="program-tabs__wrapper program-tabs__wrapper--active">
+							<ul class="info-modal__list">
+								<li class="info-modal__item">8 Бюджетных мест</li>
+								<li class="info-modal__item">8 Контрактных мест</li>
+								<li class="info-modal__item">Цена не указана</li>
+							</ul>
+						</div>
+						<div class="program-tabs__wrapper">
 							<ul class="info-modal__list">
 								<li class="info-modal__item">8 Бюджетных мест</li>
 								<li class="info-modal__item">8 Контрактных мест</li>
@@ -3217,7 +3235,6 @@
 	<div class="info-modal-overlay"></div>
 	<!-- end of info modals -->
 	<!-- scripts -->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
 	<script src="js/directions_filter.js"></script>
